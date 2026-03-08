@@ -1,6 +1,6 @@
 [project]
 name = "better-tts-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "A feature-rich MCP server for Microsoft Edge Text-to-Speech, supporting voice listing, speech synthesis with subtitles, parameter tuning, and batch processing."
 readme = "README.md"
 license = "MIT"
