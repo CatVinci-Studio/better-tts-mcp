@@ -54,6 +54,27 @@ claude mcp add edge-tts -- uvx better-tts-mcp
 }
 ```
 
+如果 Claude Desktop 找不到 `uvx`，通常是因为它使用的 `PATH` 与终端不同。
+
+先在终端执行：
+
+```bash
+which uvx
+```
+
+然后把配置里的 `"command": "uvx"` 改成该命令输出的绝对路径，例如：
+
+```json
+{
+  "mcpServers": {
+    "edge-tts": {
+      "command": "/Users/yourname/.local/bin/uvx",
+      "args": ["better-tts-mcp"]
+    }
+  }
+}
+```
+
 ---
 
 ## 可用工具

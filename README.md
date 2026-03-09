@@ -54,6 +54,27 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
+If Claude Desktop cannot find `uvx`, it may be using a different `PATH` from your terminal.
+
+Run:
+
+```bash
+which uvx
+```
+
+Then replace `"command": "uvx"` with the absolute path from the command output, for example:
+
+```json
+{
+  "mcpServers": {
+    "edge-tts": {
+      "command": "/Users/yourname/.local/bin/uvx",
+      "args": ["better-tts-mcp"]
+    }
+  }
+}
+```
+
 ---
 
 ## Available Tools
